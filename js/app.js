@@ -11,7 +11,7 @@ var locationGet = locationApiUrlBase.replace("<zip_code>", '93933');
 console.log(locationGet);
 $.ajax({
     url: locationGet,
-    crossDomain: true,
+    dataType: "json",
     success: function(result, status){
         alert("success");
         console.log(result);
