@@ -12,6 +12,7 @@ console.log(locationGet);
 $.ajax({
     url: locationGet,
     dataType: "json",
+    crossDomain: true,
     success: function(result, status){
         alert("success");
         console.log(result);
