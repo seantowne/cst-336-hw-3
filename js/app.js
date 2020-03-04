@@ -18,6 +18,7 @@ $.ajax({
     },
     error: function(status, error){
         alert("failure");
+        console.log(status);
     }
 });
 
