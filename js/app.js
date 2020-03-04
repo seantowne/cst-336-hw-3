@@ -1,6 +1,6 @@
 
 var weatherApiKey = "ff4f1b59e21d4048c11ff586ffe76523";
-var locationApiKey = "uzT7HcsKN5vU4zjC8kdGrH7aDVIIAXYI0SgXP6Kp93X2431LVzOrIYX4jxgwQ1Tt";
+var locationApiKey = "yshNbMqn0rYVh5lIV0154ZoxUfq5hUNQgy6BKpwb5snh2AzyMEXCOICfbHjLg4e5";
 
 var locationApiUrlBase = "https://www.zipcodeapi.com/rest/"+locationApiKey+"/info.json/<zip_code>/degrees"
 
