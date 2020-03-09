@@ -66,6 +66,7 @@ function show_preview_photos(result){
         console.log(src);
         var img = "<img src='"+src+"' class='img-thumbnail'";
         var div = "<div class='flex-item'>"+img+"</div>";
+        console.log(div);
         $("#searchResults").append(div);
     }
 }
