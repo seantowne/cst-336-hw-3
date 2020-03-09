@@ -1,0 +1,23 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-item{
+    width: 30%;
+    margin: 10px;
+}
+
+#inputDiv{
+    background-color: lightblue;
+}
+#errorMessage{
+    padding-bottom: 30px
+}
+.container{
+    
+}
+
+
+/* use bootstrap img-thumbnail */
