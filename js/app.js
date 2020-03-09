@@ -50,6 +50,7 @@ $("#lookupSearchTerm").on('click', function() {
             alert("success");
             console.log(result);
             console.log(searchTerm);
+            $("#searchResults").empty();
             show_preview_photos(result);
         },
         error: function(status, error){
