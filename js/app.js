@@ -15,6 +15,9 @@ $("#lookupSearchTerm").on('click', function() {
         success: function(result, status){
             
             $("#searchResults").empty();
+            if ( result.length == 0 ){
+                nothing_found();
+            }
             
             for ( var i in result.results ){
                 show_preview_photos(result, i);
@@ -26,6 +29,10 @@ $("#lookupSearchTerm").on('click', function() {
         }
     });
 });
+
+function nothing_found(){
+    $("#searchResults").append("no images found :/");
+}
 
 function show_preview_photos(result, i){
     var preview_photos = result.results[i].preview_photos;
