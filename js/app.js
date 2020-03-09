@@ -51,6 +51,7 @@ $("#lookupSearchTerm").on('click', function() {
             console.log(result);
             console.log(searchTerm);
             var img = result.results[0].preview_photos[0].urls.raw;
+            console.log(img);
             $("#searchResults").html("<img src='"+img+"'>");
             
         },
