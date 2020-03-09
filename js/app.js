@@ -62,7 +62,7 @@ $("#lookupSearchTerm").on('click', function() {
 function show_preview_photos(result){
     var preview_photos = result.results[0].preview_photos;
     for ( var i in preview_photos ){
-        var src = preview_photos[i].urls.raw;
+        var src = preview_photos[i].urls.regular;
         console.log(src);
         var img = "<img src='"+src+"' class='img-thumbnail'";
         var div = "<div class='flex-item'>"+img+"</div>";
