@@ -52,7 +52,7 @@ $("#lookupSearchTerm").on('click', function() {
             console.log(searchTerm);
             $("#searchResults").empty();
             
-            for ( var i in results ){
+            for ( var i in result.results ){
                 show_preview_photos(result, i);
             }
         },
