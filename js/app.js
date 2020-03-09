@@ -15,7 +15,7 @@ $("#lookupSearchTerm").on('click', function() {
         success: function(result, status){
             console.log(result);
             $("#searchResults").empty();
-            if ( result.length == 0 ){
+            if ( result.total == 0  || result.total_pages == 0){
                 nothing_found();
             }
             
