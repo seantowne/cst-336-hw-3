@@ -13,7 +13,7 @@ $("#lookupSearchTerm").on('click', function() {
         url: urlBase,
         dataType: "json",
         success: function(result, status){
-            
+            console.log(result);
             $("#searchResults").empty();
             if ( result.length == 0 ){
                 nothing_found();
