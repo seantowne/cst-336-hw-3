@@ -51,7 +51,10 @@ $("#lookupSearchTerm").on('click', function() {
             console.log(result);
             console.log(searchTerm);
             $("#searchResults").empty();
-            show_preview_photos(result);
+            
+            for ( var i in results ){
+                show_preview_photos(result, i);
+            }
         },
         error: function(status, error){
             alert("failure");
@@ -60,8 +63,8 @@ $("#lookupSearchTerm").on('click', function() {
     });
 });
 
-function show_preview_photos(result){
-    var preview_photos = result.results[0].preview_photos;
+function show_preview_photos(result, i){
+    var preview_photos = result.results[i].preview_photos;
     for ( var i in preview_photos ){
         var src = preview_photos[i].urls.regular;
         console.log(src);
