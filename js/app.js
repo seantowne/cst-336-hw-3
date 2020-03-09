@@ -50,6 +50,8 @@ $("#lookupSearchTerm").on('click', function() {
             alert("success");
             console.log(result);
             console.log(searchTerm);
+            var img = result.results[0].preview_photos[0].urls.raw;
+            $("#searchResults").html("<img src="+img+">");
             
         },
         error: function(status, error){
